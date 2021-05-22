@@ -1,0 +1,15 @@
+.btn {
+    width: 200px;
+    height: 40px;
+    color: #f1f1f1
+}
+/* 
+.btn:hover {
+    background: grey;
+    color: #f1f1f1;
+} */
+
+.form-check {
+    width: 20px;
+    margin: auto;
+}

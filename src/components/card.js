@@ -1,38 +1,11 @@
-import { useSelector } from "react-redux";
-
-const Container = () => {
-    const dishes = useSelector((state) => state.allDish.dish);
-    return (
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col p-3 border bg-light"> 
-                    Side Bar 
-                </div>
-                <div className="col-6 p-3 border">
-                    <h1>Available Dishes</h1> <br/>
-                    <div style={{display:'flex', alignContent:'center'}}>
-                        {/*{List}*/}
-                            {dishes.map((dish,index) => (
-                                <Card Dish={dish} key={index} />
-                            ))}
-                    </div>
-                </div>
-                <div className="col p-3 border bg-light"> 
-                    Side Bar 
-                </div>
-            </div>
-        </div>
-    );
-}
-
 const Card = (props) => {
-    const {dishName, proteins, carbs, fats} = props.dish;
+    const {dishName, proteins, carbs, fats} = props.Dish;
         
     return (
         <>
-            <div className="card" style={{width:'18rem'}}>
+            <div className="card col-md-5 mx-auto mb-4" >
                 {/* <img src="../logo192.png" className="card-img-top" alt="picture" />  */}
-                <h5 className="card-title">{dishName}</h5>
+                <h5 className="card-title text-center">{dishName}</h5>
                 <div>
                         <table className="table ">
                             <thead>
@@ -67,4 +40,4 @@ const Card = (props) => {
 
 }
 
-export default Container;
+export default Card;

@@ -13,3 +13,10 @@ export const deleteDish = (dish) => {
         payload : dish
     };
 }
+
+export const editDish = (dish) => {
+    return {
+        type : ActionTypes.EDIT_DISH,
+        payload : dish
+    }
+}
