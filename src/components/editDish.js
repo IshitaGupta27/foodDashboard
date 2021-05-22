@@ -6,7 +6,7 @@ const EditDish = (props) => {
     return (
         <div className="container">
             <div className="btn btn-default">
-                <Link to="/admin">Back</Link></div>
+                <Link to="/foodDashboard/admin">Back</Link></div>
             <AddDish dish={props.location.state} />
         </div>
     )

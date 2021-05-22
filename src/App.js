@@ -9,9 +9,9 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path="/" exact component={Container} />
-          <Route path="/admin" exact component={AllDishes} />
-          <Route path="/edit" exact component={EditDish} />
+          <Route path="/foodDashboard/" exact component={Container} />
+          <Route path="/foodDashboard/admin" exact component={AllDishes} />
+          <Route path="/foodDashboard/edit" exact component={EditDish} />
           <Route>404 Not Found!</Route>
         </Switch>
       </Router>
