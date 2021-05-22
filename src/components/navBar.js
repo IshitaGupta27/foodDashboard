@@ -5,10 +5,10 @@ const NavBar = () => {
         <nav className="navbar navbar-light" style={{backgroundColor:'antiquewhite'}}>
             <div style={{display:'flex'}}>
             <div className="container">
-                <Link to="/foodDashboard/" className="navbar-brand mb-0 mx-0 h1">User </Link>
+                <Link to="/" className="navbar-brand mb-0 mx-0 h1">User </Link>
             </div>
             <div className="container">
-                <Link to="/foodDashboard/admin" className="navbar-brand mb-0 mx-0 h1">Admin </Link>
+                <Link to="/admin" className="navbar-brand mb-0 mx-0 h1">Admin </Link>
             </div>
             </div>
         </nav>
