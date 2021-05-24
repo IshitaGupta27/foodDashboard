@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/foodDashboard/static/css/main.ca98692f.chunk.css",
-    "main.js": "/foodDashboard/static/js/main.6cfe8dd6.chunk.js",
-    "main.js.map": "/foodDashboard/static/js/main.6cfe8dd6.chunk.js.map",
+    "main.css": "/foodDashboard/static/css/main.ef1d55ce.chunk.css",
+    "main.js": "/foodDashboard/static/js/main.641d9c1e.chunk.js",
+    "main.js.map": "/foodDashboard/static/js/main.641d9c1e.chunk.js.map",
     "runtime-main.js": "/foodDashboard/static/js/runtime-main.1dcc2d14.js",
     "runtime-main.js.map": "/foodDashboard/static/js/runtime-main.1dcc2d14.js.map",
     "static/css/2.97503911.chunk.css": "/foodDashboard/static/css/2.97503911.chunk.css",
-    "static/js/2.39a235ed.chunk.js": "/foodDashboard/static/js/2.39a235ed.chunk.js",
-    "static/js/2.39a235ed.chunk.js.map": "/foodDashboard/static/js/2.39a235ed.chunk.js.map",
+    "static/js/2.4277c6b6.chunk.js": "/foodDashboard/static/js/2.4277c6b6.chunk.js",
+    "static/js/2.4277c6b6.chunk.js.map": "/foodDashboard/static/js/2.4277c6b6.chunk.js.map",
     "index.html": "/foodDashboard/index.html",
     "static/css/2.97503911.chunk.css.map": "/foodDashboard/static/css/2.97503911.chunk.css.map",
-    "static/css/main.ca98692f.chunk.css.map": "/foodDashboard/static/css/main.ca98692f.chunk.css.map",
-    "static/js/2.39a235ed.chunk.js.LICENSE.txt": "/foodDashboard/static/js/2.39a235ed.chunk.js.LICENSE.txt"
+    "static/css/main.ef1d55ce.chunk.css.map": "/foodDashboard/static/css/main.ef1d55ce.chunk.css.map",
+    "static/js/2.4277c6b6.chunk.js.LICENSE.txt": "/foodDashboard/static/js/2.4277c6b6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1dcc2d14.js",
     "static/css/2.97503911.chunk.css",
-    "static/js/2.39a235ed.chunk.js",
-    "static/css/main.ca98692f.chunk.css",
-    "static/js/main.6cfe8dd6.chunk.js"
+    "static/js/2.4277c6b6.chunk.js",
+    "static/css/main.ef1d55ce.chunk.css",
+    "static/js/main.641d9c1e.chunk.js"
   ]
 }
