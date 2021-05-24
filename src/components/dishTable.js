@@ -10,12 +10,12 @@ const AllDishes = (props) => {
     const [showForm, setShowForm] = useState(false);
     const dishes = useSelector((state) => state.allDish.dish);
 
-    const [isEdit, setIsEdit] = useState(false);
-    const editDish = (dish)=>{
-        setIsEdit(true);
+    // const [isEdit, setIsEdit] = useState(false);
+    // const editDish = (dish)=>{
+    //     setIsEdit(true);
 
-        return isEdit?<AddDish Dish={dish} />:<AddDish />
-    }
+    //     return isEdit?<AddDish Dish={dish} />:<AddDish />
+    // }
 
     return (
         <>
@@ -26,13 +26,13 @@ const AllDishes = (props) => {
                     <table className="table table-striped">
                         <thead className="table-dark">
                             <tr>
-                                <th scope="col"> </th>
                                 {/* <th scope="col" className="text-center text-capitalize">id</th> */}
                                 <th scope="col" className="text-center text-capitalize">Dish</th>
                                 <th scope="col" className="text-center text-capitalize">Proteins</th>
                                 <th scope="col" className="text-center text-capitalize">Carbs</th>
                                 <th scope="col" className="text-center text-capitalize">Fats</th>
                                 <th scope="col" className="text-center text-capitalize">Calories</th>
+                                <th scope="col" className="text-center text-capitalize"></th>
                                 <th scope="col" className="text-center text-capitalize"></th>
                             </tr>
                         </thead>
@@ -52,7 +52,6 @@ const AllDishes = (props) => {
                 <div className="container">
                     
                 <button type="button" className=" mx-auto btn btn-info" onClick={() => setShowForm(!showForm)}>Add Dish</button> &nbsp;
-                <button type="button" className="btn btn-danger">Delete Dish</button> 
                 </div> 
             </div>
             {

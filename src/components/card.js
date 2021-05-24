@@ -3,9 +3,9 @@ const Card = (props) => {
         
     return (
         <>
-            <div className="card col-md-5 mx-auto mb-4" >
+            <div className="card col-md-4 mx-auto mb-4" >
                 {/* <img src="../logo192.png" className="card-img-top" alt="picture" />  */}
-                <h5 className="card-title text-center">{dishName}</h5>
+                <h5 className="card-title text-center mt-3">{dishName}</h5>
                 <div>
                         <table className="table ">
                             <thead>

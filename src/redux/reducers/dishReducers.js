@@ -40,6 +40,11 @@ export const dishReducer = (state = initialState, {type, payload}) => {
                 })]
             }
             
+        case ActionTypes.DELETE_DISH:
+            return {
+                dish: [...state.dish.filter(del => del.id !== payload.id)]
+            }
+
         default:
             return state;
     }

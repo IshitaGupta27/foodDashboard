@@ -64,8 +64,6 @@ const AddDish = (props) => {
 
             }
 
-
-
     return (
         <>
             {/*{JSON.stringify(dishDetails)}*/}

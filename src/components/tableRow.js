@@ -1,5 +1,9 @@
+import {useDispatch} from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const TableRow = (props) => {
-    const {id, dishName, proteins, carbs, fats} = props.Dish;
+    const {dishName, proteins, carbs, fats} = props.Dish;
 
     const editDish = () => {
         
@@ -9,18 +13,15 @@ const TableRow = (props) => {
             });      
         
     }
+
+    const dispatch = useDispatch();
+    const deleteDish = () => {
+        dispatch({type: "DELETE_DISH", payload: props.Dish});
+        toast("Dish deleted");
+    }
     return (
         <>
             <tr>
-                <td className="text-center text-capitalize">
-                    <input 
-                        className="form-check input" 
-                        value={id}
-                        type="checkbox"
-                        onClick={()=>console.log(id)}
-
-                    />
-                </td>
                 {/* <td>{id}</td> */}
                 <td className="text-center text-capitalize">{dishName}</td>
                 <td className="text-center text-capitalize">{proteins}</td>
@@ -34,8 +35,16 @@ const TableRow = (props) => {
                         onClick={()=>editDish()}
                     >Edit</button>
                 </td>
+                <td className="text-center text-capitalize">
+                    <button 
+                        type="button" 
+                        className="btn btn-danger"
+                        onClick={() => deleteDish()}
+                    >Delete Dish</button> 
+                </td>
                 
             </tr>
+            <ToastContainer />
         </>
     );
 }
