@@ -3,12 +3,13 @@ import { useSelector } from "react-redux";
 import AddDish from "./addDish";
 import NavBar from './navBar';
 import TableRow from './tableRow';
-//import { ToastContainer, toast } from 'react-toastify';
-//import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AllDishes = (props) => {
     const [showForm, setShowForm] = useState(false);
     const dishes = useSelector((state) => state.allDish.dish);
+    const {keyword} = useSelector((state)=> state.filter);
 
     // const [isEdit, setIsEdit] = useState(false);
     // const editDish = (dish)=>{
@@ -37,7 +38,17 @@ const AllDishes = (props) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {dishes.map((dish, index) => (
+                            {dishes
+                            .filter(dish=>{
+                                if(keyword ==null){
+                                    return dish;
+                                } else {
+                                    var reg = new RegExp(keyword,'i')
+                                    return dish.dishName.match(reg)!=null
+                                }
+
+                            })
+                            .map((dish, index) => (
                                 <TableRow 
                                     Dish={dish} 
                                     key={index}
@@ -58,6 +69,7 @@ const AllDishes = (props) => {
                 showForm && <AddDish />
             }
             {/* <div className="col-2"></div> */}
+            <ToastContainer />
         </>
     );
 }

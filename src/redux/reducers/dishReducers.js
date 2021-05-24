@@ -45,6 +45,7 @@ export const dishReducer = (state = initialState, {type, payload}) => {
                 dish: [...state.dish.filter(del => del.id !== payload.id)]
             }
 
+
         default:
             return state;
     }

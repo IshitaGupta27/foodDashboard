@@ -5,6 +5,7 @@ import NavBar from './navBar';
 
 const Container = () => {
     const dishes = useSelector((state) => state.allDish.dish);
+    const {keyword} = useSelector((state)=> state.filter);
     
     return (
         <>
@@ -19,7 +20,17 @@ const Container = () => {
                     
                     <div className="col-md-12 row">
                         {/*{List}*/}
-                            {dishes.map((dish,index) => (
+                            {dishes
+                            .filter(dish=>{
+                                if(keyword ==null){
+                                    return dish;
+                                } else {
+                                    var reg = new RegExp(keyword,'i')
+                                    return dish.dishName.match(reg)!=null
+                                }
+
+                            })
+                            .map((dish,index) => (
                                 <Card Dish={dish} key={index} />
                             ))}
                     </div>

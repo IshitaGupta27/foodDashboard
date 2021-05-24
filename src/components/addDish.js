@@ -60,9 +60,7 @@ const AddDish = (props) => {
             dispatch({type: "ADD_DISH", payload: dishDetails});
             toast("Dish Added");
         }
-
-
-            }
+    }
 
     return (
         <>
@@ -112,7 +110,6 @@ const AddDish = (props) => {
                 
             </form>
             </div>
-            <ToastContainer />
         </>
     );
 }

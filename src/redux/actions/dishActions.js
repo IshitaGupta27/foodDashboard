@@ -20,3 +20,16 @@ export const editDish = (dish) => {
         payload : dish
     }
 }
+
+export const searchDish = (dish) => {
+    return {
+        type : ActionTypes.SEARCH_DISH,
+        payload : dish
+    };
+}
+
+export const removeFilter = () => {
+    return {
+        type: ActionTypes.REMOVE_FILTER
+    }
+}
